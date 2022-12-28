@@ -1,10 +1,13 @@
 #include <Pythia8/Basics.h>
 #include <functional>
+#include <ios>
 #include <istream>
 #include <iterator>
+#include <locale>
 #include <memory>
 #include <ostream>
 #include <sstream> // __str__
+#include <streambuf>
 #include <string>
 #include <vector>
 
@@ -28,6 +31,12 @@
 
 void bind_Pythia8_Basics_2(std::function< pybind11::module &(std::string const &namespace_) > &M)
 {
+	// Pythia8::table(const class Pythia8::Hist &, const class Pythia8::Hist &, std::ostream &, bool, bool) file:Pythia8/Basics.h line:524
+	M("Pythia8").def("table", (void (*)(const class Pythia8::Hist &, const class Pythia8::Hist &, std::ostream &, bool, bool)) &Pythia8::table, "C++: Pythia8::table(const class Pythia8::Hist &, const class Pythia8::Hist &, std::ostream &, bool, bool) --> void", pybind11::arg("h1"), pybind11::arg("h2"), pybind11::arg("os"), pybind11::arg("printOverUnder"), pybind11::arg("xMidBin"));
+
+	// Pythia8::table(const class Pythia8::Hist &, const class Pythia8::Hist &, std::string, bool, bool) file:Pythia8/Basics.h line:526
+	M("Pythia8").def("table", (void (*)(const class Pythia8::Hist &, const class Pythia8::Hist &, std::string, bool, bool)) &Pythia8::table, "C++: Pythia8::table(const class Pythia8::Hist &, const class Pythia8::Hist &, std::string, bool, bool) --> void", pybind11::arg("h1"), pybind11::arg("h2"), pybind11::arg("fileName"), pybind11::arg("printOverUnder"), pybind11::arg("xMidBin"));
+
 	{ // Pythia8::HistPlot file:Pythia8/Basics.h line:710
 		pybind11::class_<Pythia8::HistPlot, std::shared_ptr<Pythia8::HistPlot>> cl(M("Pythia8"), "HistPlot", "");
 		pybind11::handle cl_type = cl;
