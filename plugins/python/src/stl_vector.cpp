@@ -94,38 +94,8 @@ void bind_std_stl_vector(std::function< pybind11::module &(std::string const &na
 
 	// std::vector file:bits/stl_vector.h line:214
 
-	// std::vector file:bits/stl_vector.h line:214
-
-	// std::vector file:bits/stl_vector.h line:214
-
-	// std::vector file:bits/stl_vector.h line:214
-
-	// std::vector file:bits/stl_vector.h line:214
-
 	// std::vector file:bits/stl_bvector.h line:541
 
-	// std::vector file:bits/stl_vector.h line:214
-
-	// std::vector file:bits/stl_vector.h line:214
-
-	// std::vector file:bits/stl_vector.h line:214
-
-	// std::vector file:bits/stl_vector.h line:214
-
-	// std::vector file:bits/stl_vector.h line:214
-
-	// std::vector file:bits/stl_vector.h line:214
-
-	// std::vector file:bits/stl_vector.h line:214
-
-	// std::vector file:bits/stl_vector.h line:214
-
-	// std::vector file:bits/stl_vector.h line:214
-
-	// std::vector file:bits/stl_vector.h line:214
-
-	// std::vector file:bits/stl_vector.h line:214
-
 	// std::map file:bits/stl_map.h line:96
 
 	// std::map file:bits/stl_map.h line:96
@@ -143,17 +113,5 @@ void bind_std_stl_vector(std::function< pybind11::module &(std::string const &na
 	// std::map file:bits/stl_map.h line:96
 
 	// std::map file:bits/stl_map.h line:96
-
-	// std::map file:bits/stl_map.h line:96
-
-	// std::map file:bits/stl_map.h line:96
-
-	// std::map file:bits/stl_map.h line:96
-
-	// std::map file:bits/stl_map.h line:96
-
-	// std::unordered_map file:bits/unordered_map.h line:98
-
-	// std::multiset file:bits/stl_multiset.h line:92
 
 }
